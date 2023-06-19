@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Calculator</title>
+  <link rel="stylesheet" type="text/css" href="calstyle.css">
+</head>
+<body>
+  <div class="calculator">
+	<div id="screen">
+    <input type="text" id="result" readonly>
+	</div>
+    <div class="keypad">
+      <button onclick="appendToResult('9')">9</button>
+      <button onclick="appendToResult('8')">8</button>
+      <button onclick="appendToResult('7')">7</button>
+      <button onclick="appendToResult('6')">6</button>
+	</div>
+	<div class="keypad">
+      <button onclick="appendToResult('5')">5</button>
+      <button onclick="appendToResult('4')">4</button>
+      <button onclick="appendToResult('3')">3</button>
+      <button onclick="appendToResult('2')">2</button>
+	</div>
+	  <div class="keypad">
+      <button onclick="appendToResult('1')">1</button>
+      <button onclick="appendToResult('0')">0</button>
+      <button onclick="appendToResult('.')">.</button>
+      <button onclick="calculate()">=</button>
+	  </div>
+	  <div class="keypad">
+      <button onclick="appendToResult('+')">+</button>
+      <button onclick="appendToResult('-')">-</button>
+      <button onclick="appendToResult('*')">*</button>
+      <button onclick="appendToResult('/')">/</button>
+	  <br>
+	   <button id="del" onclick="clearResult()">Del</button>
+	   <button id="backspace" onclick="backspace()">←</button>
+    </div>
+  </div>
+  
+  <script src="calscript.js"></script>
+</body>
+</html>
